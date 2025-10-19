@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAL-(हल) - Habit Tracker</title>
+    <link rel="stylesheet" href="habit.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="parent_header">
+        <div class="parent_navbar">
+            <nav>
+                <ul class="nav_item_list">
+                    <li class="nav_logo">
+                        <a class="logo" href="index.html">
+                            <img src="assets/logo.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="index.html">Home</a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="habit.html">Habit Tracker</a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="timer.html" target="_blank" rel="noopener noreferrer">Pomodoro
+                            Timer</a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="notes.html" target="_blank"
+                            rel="noopener noreferrer">Journal/Notes</a>
+                    </li>
+                    <li class="nav_links">
+                        <a href="#">
+                            <svg class="settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" color="#696D6E">
+                                <path d="M15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 
+                       10.3431 12 12 12C13.6569 12 15 10.6569 15 9Z" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 
+                       2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 
+                       22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 
+                       7 14.2386 7 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#"><img class="menu_logo" src="assets/menu_icon.png" alt="menu_logo"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="habit_tracker_container">
+        <section class="habit_tracker_container_section1">
+            <div class="s1_d1">
+                <span class="streak">Streak Count - 🔥 </span>
+                <button class="streak_insight">Insight</button>
+            </div>
+        </section>
+        <section class="habit_tracker_container_section2">
+            <div class="input_container">
+                <textarea class="input_box" placeholder="Start New Habit's..."></textarea>
+                <button class="add_button">Add Habit</button>
+            </div>
+        </section>
+        <section class="habit_tracker_container_section3">
+            <div class="habits_container">
+                <p class="no_habits">No habits added for now.</p>
+                <div class="habit_item">
+                    <span class="habit_name">H1</span>
+                    <div class="habit_actions">
+                        <button class="edit_btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/edit-01-stroke-standard.svg?v=3.0"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                                <path
+                                    d="M6 15H3.75C2.7835 15 2 15.7835 2 16.75C2 17.7165 2.7835 18.5 3.75 18.5H13.25C14.2165 18.5 15 19.2835 15 20.25C15 21.2165 14.2165 22 13.25 22H11"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M9 15V13.1569C9 12.096 9.42143 11.0786 10.1716 10.3284L17.7929 2.70711C18.1834 2.31658 18.8166 2.31658 19.2071 2.70711L21.2929 4.79289C21.6834 5.18342 21.6834 5.81658 21.2929 6.20711L13.6716 13.8284C12.9214 14.5786 11.904 15 10.8431 15H9Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                            </svg></button>
+                        <button class="delete_btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/delete-03-stroke-standard.svg?v=3.0"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                                <path d="M9 11.5H15" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M10.5 15.5H13.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M19.5 5.5L18.6139 20.121C18.5499 21.1766 17.6751 22 16.6175 22H7.38246C6.32488 22 5.4501 21.1766 5.38612 20.121L4.5 5.5"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M3 5.5H8M21 5.5H16M16 5.5L14.7597 2.60608C14.6022 2.2384 14.2406 2 13.8406 2H10.1594C9.75937 2 9.39783 2.2384 9.24025 2.60608L8 5.5M16 5.5H8"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg></button>
+                        <span class="streak_count">🔥 -</span>
+                    </div>
+                </div>
+                <div class="habit_item">
+                    <span class="habit_name">H2</span>
+                    <div class="habit_actions">
+                        <button class="edit_btn"><svg clas="edit" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/edit-01-stroke-standard.svg?v=3.0"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                                <path
+                                    d="M6 15H3.75C2.7835 15 2 15.7835 2 16.75C2 17.7165 2.7835 18.5 3.75 18.5H13.25C14.2165 18.5 15 19.2835 15 20.25C15 21.2165 14.2165 22 13.25 22H11"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M9 15V13.1569C9 12.096 9.42143 11.0786 10.1716 10.3284L17.7929 2.70711C18.1834 2.31658 18.8166 2.31658 19.2071 2.70711L21.2929 4.79289C21.6834 5.18342 21.6834 5.81658 21.2929 6.20711L13.6716 13.8284C12.9214 14.5786 11.904 15 10.8431 15H9Z"
+                                    stroke="#000000" stroke-width="1.5" stroke-linejoin="round"></path>
+                            </svg></button>
+                        <button class="delete_btn"><svg class="delete" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                data-src="https://cdn.hugeicons.com/icons/delete-03-stroke-standard.svg?v=3.0"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                                <path d="M9 11.5H15" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path d="M10.5 15.5H13.5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M19.5 5.5L18.6139 20.121C18.5499 21.1766 17.6751 22 16.6175 22H7.38246C6.32488 22 5.4501 21.1766 5.38612 20.121L4.5 5.5"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path
+                                    d="M3 5.5H8M21 5.5H16M16 5.5L14.7597 2.60608C14.6022 2.2384 14.2406 2 13.8406 2H10.1594C9.75937 2 9.39783 2.2384 9.24025 2.60608L8 5.5M16 5.5H8"
+                                    stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg></button>
+                        <span class="streak_count">🔥 -</span>
+                    </div>
+                </div>
+                <button class="show_more_btn">View all habits</button>
+            </div>
+        </section>
+    </section>
+
+    <script src="habit.js"></script>
+</body>
+
+</html>

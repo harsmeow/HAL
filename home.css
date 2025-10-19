@@ -1,0 +1,1314 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: black;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #55087925;
+    background-color: white;
+    background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.35) 1px, transparent 0);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.parent_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.25rem 0;
+}
+
+.parent_navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_item_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_logo {
+    margin-right: auto;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.nav_logo img {
+    width: 3rem;
+    height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav_logo img:hover {
+    transform: scale(1.05);
+}
+
+.quotes {
+    font-family: 'Bitcount';
+    text-align: center;
+    font-weight: 500;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem auto 0 auto;
+    gap: 4rem;
+}
+
+.s2_h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    letter-spacing: 0.04rem;
+    padding: 8rem 0 3rem 0;
+}
+
+.s2_buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.habit_page {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(80, 80, 80, 0.353);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.timer_page {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(80, 80, 80, 0.353);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.notes_page {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10rem;
+    color: black;
+    border: 1px solid black;
+    background-color: rgba(80, 80, 80, 0.353);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit_page:hover,
+.timer_page:hover,
+.notes_page:hover {
+    transform: scale(1.02);
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.579);
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.626))
+}
+
+.hr1 {
+    width: 90vw;
+    margin-top: 8rem;
+}
+
+.text_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 6rem 0 6rem;
+    gap: 2rem;
+}
+
+.heading {
+    font-size: 4rem;
+}
+
+.about_content {
+    letter-spacing: 0.02rem;
+    font-size: 1.2rem;
+    line-height: 2.6rem;
+}
+
+.hr2 {
+    width: 90vw;
+    margin-top: 2rem;
+}
+
+.ul_container {
+    padding: 2rem 5rem 2rem 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 2rem;
+}
+
+.personal_links a {
+    color: black;
+    text-decoration: none;
+}
+
+.connect {
+    font-size: 2rem;
+}
+
+.github,
+.linkedin,
+.x,
+.email {
+    width: 1.875rem;
+    height: auto;
+    transition: tranform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.linkedin,
+.x,
+.email {
+    margin-left: 2rem;
+}
+
+.github:hover,
+.linkedin:hover,
+.x:hover,
+.email:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: drop-shadow(0 2px 6px rgba(20, 19, 20, 0.626))
+}
+
+/* Media queires below for home page */
+
+@media screen and (min-width:320px) and (max-width:426px) {
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quotes {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.01rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .habit_page {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 1.8rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 1.8rem 2rem 0 2rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.01rem;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 1.8rem;
+    }
+
+    .ul_container {
+        padding: 2rem 2rem 2rem 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    .connect {
+        font-size: 0.6rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 0.8rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 0.8rem;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:702px) {
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quotes {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 0.8rem;
+        line-height: 2rem;
+        letter-spacing: 0.01rem;
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .habit_page {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.6rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.01rem;
+        font-size: 0.6rem;
+        line-height: 1.2rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 1.8rem;
+    }
+
+    .ul_container {
+        padding: 2rem 2rem 2rem 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 0.8rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 1rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width:702px) and (max-width:769px) {
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quotes {
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 4rem;
+        letter-spacing: 0.04rem;
+        padding: 5rem 0 2rem 0;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .habit_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.03rem;
+        font-size: 0.8rem;
+        line-height: 2.2rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .ul_container {
+        padding: 3rem 5rem 3rem 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 1rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 1.2rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1020px) {
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+
+    .nav_logo img {
+        width: 3rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quotes {
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 4rem;
+        letter-spacing: 0.04rem;
+        padding: 5rem 0 2rem 0;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .habit_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.03rem;
+        font-size: 1rem;
+        line-height: 2.6rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .ul_container {
+        padding: 3rem 5rem 3rem 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 1.2rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 1.475rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:1020px) and (max-width:1200px) {
+
+    .quotes {
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 4rem;
+        letter-spacing: 0.04rem;
+        padding: 5rem 0 2rem 0;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .habit_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.03rem;
+        font-size: 1rem;
+        line-height: 2.6rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .ul_container {
+        padding: 3rem 5rem 3rem 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 1.2rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 1.475rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1470px) {
+
+    .quotes {
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1rem;
+        line-height: 4rem;
+        letter-spacing: 0.04rem;
+        padding: 5rem 0 2rem 0;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .habit_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 3rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.03rem;
+        font-size: 1rem;
+        line-height: 2.6rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .ul_container {
+        padding: 3rem 5rem 3rem 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 1.2rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 1.475rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (min-width:1800px) {
+
+    .quotes {
+        font-size: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.8rem;
+        line-height: 4rem;
+        letter-spacing: 0.04rem;
+        padding: 8rem 0 4rem 0;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    .habit_page {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 6rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 4rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 3rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.04rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .ul_container {
+        padding: 3rem 5rem 3rem 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 1.8rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 1.875rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 2rem;
+    }
+
+}
+
+@media screen and (min-width:3000px) {
+    .nav_item_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 3rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .quotes {
+        font-size: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5rem auto 0 auto;
+        gap: 4rem;
+    }
+
+    .s2_h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+        line-height: 4rem;
+        letter-spacing: 0.04rem;
+        padding: 15rem 0 8rem 0;
+    }
+
+    .s2_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8rem;
+    }
+
+    .habit_page {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .timer_page {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .notes_page {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        font-weight: 500;
+        border-radius: 10rem;
+        color: black;
+        border: 1px solid black;
+        background-color: rgba(80, 80, 80, 0.353);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .hr1 {
+        width: 90vw;
+        margin-top: 10rem;
+    }
+
+    .text_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 6rem 6rem 0 6rem;
+        gap: 2rem;
+    }
+
+    .heading {
+        font-size: 6rem;
+    }
+
+    .about_content {
+        letter-spacing: 0.04rem;
+        font-size: 2.6rem;
+        line-height: 4.6rem;
+    }
+
+    .hr2 {
+        width: 90vw;
+        margin-top: 4rem;
+    }
+
+    .ul_container {
+        padding: 4rem 5rem 4rem 5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 2rem;
+    }
+
+    .connect {
+        font-size: 2.6rem;
+    }
+
+    .github,
+    .linkedin,
+    .x,
+    .email {
+        width: 2.875rem;
+        height: auto;
+        transition: tranform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .linkedin,
+    .x,
+    .email {
+        margin-left: 2rem;
+    }
+
+}

@@ -1,0 +1,2525 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDEDE9;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat/static/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bitcount';
+    src: url('fonts/Bitcount_Prop_Single/static/BitcountPropSingle-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+.parent_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.25rem 0;
+}
+
+.parent_navbar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav_item_list {
+    font-family: 'Bitcount';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_logo {
+    margin-right: auto;
+    padding-left: 3rem;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.nav_logo img {
+    width: 3rem;
+    height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav_logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav_links {
+    display: flex;
+    align-items: center;
+    padding-right: 5rem;
+
+}
+
+.nav_items {
+    text-decoration: none;
+    color: black;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav_items:hover {
+    transform: scale(1.05);
+}
+
+.menu_logo {
+    display: none;
+}
+
+.settings {
+    width: 1.8rem;
+    height: auto;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.settings:hover {
+    transform: scale(1.05);
+}
+
+.s1_d1 {
+    font-family: 'Bitcount';
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2.8rem;
+    padding-top: 3rem;
+    gap: 1rem;
+}
+
+.streak_insight {
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #b85e5e;
+    color: black;
+    border-radius: 1.5625rem;
+    padding: 0.75rem 1.25rem;
+    border: 0.125rem solid antiquewhite;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.streak_insight:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+}
+
+.input_box {
+    font-family: 'Montserrat';
+    background-color: #E3D5CA;
+    width: 60vw;
+    height: 12rem;
+    border-radius: 0.8rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    resize: none;
+    overflow-y: auto;
+    box-sizing: border-box;
+    scrollbar-color: #212b024f rgb(255, 255, 231);
+    scroll-behavior: smooth;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.input_box:hover {
+    transform: scale(1.002);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.add_button {
+    width: 10rem;
+    height: 4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #b85e5ea7;
+    color: black;
+    border-radius: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.add_button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.habits_container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #D6CCC2;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.no_habits {
+    font-family: 'Montserrat';
+    text-align: center;
+    color: #545454;
+    font-style: italic;
+}
+
+.habit_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #D5BDAF;
+    border-radius: 0.8rem;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.habit_item:hover {
+    box-shadow: inset 2px 4px 16px rgba(109, 95, 49, 0.241);
+}
+
+.habit_name {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.habit_actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.edit_btn,
+.delete_btn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.edit_btn svg,
+.delete_btn svg {
+    width: 1.2rem;
+    height: auto;
+}
+
+.edit_btn:hover,
+.delete_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.edit_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EBE0;
+    gap: 1rem;
+}
+
+.delete_btn {
+    background-color: #F5EBE0;
+}
+
+.streak_count {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #232322;
+}
+
+.show_more_btn {
+    display: block;
+    margin: 1rem auto 0 auto;
+    padding: 0.6rem 1.2rem;
+    background-color: #aa8278ab;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.show_more_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+}
+
+.settings_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 2500;
+}
+
+.settings_popup {
+    font-family: 'Montserrat';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    z-index: 3000;
+    width: 85%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.settings_box h2 {
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+.settings_box button {
+    background: #ffe8d663;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.settings_box button:hover {
+    background: #cb997e;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+.habit_check {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.fade_habits .habit_item:nth-child(4) {
+    opacity: 0.8;
+}
+
+.fade_habits .habit_item:nth-child(5) {
+    opacity: 0.6;
+}
+
+.calendar_container {
+    width: 80vw;
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #E3D5CA;
+    border-radius: 20px;
+    box-shadow: inset 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.calendar_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+
+.calendar_nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.calendar_nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar_nav button:hover {
+    background-color: rgba(184, 94, 94, 0.1);
+}
+
+.calendar_nav button svg {
+    width: 28px;
+    height: 28px;
+}
+
+.calendar_title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #3e3e3e;
+    font-family: 'Bitcount', sans-serif;
+}
+
+.weekdays_row {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.weekday {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.calendar_grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.5rem;
+    min-height: 350px;
+    align-content: start;
+}
+
+.calendar_day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EDEDE9;
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+    cursor: default;
+    font-weight: 500;
+    position: relative;
+    min-height: 45px;
+}
+
+.calendar_day.empty {
+    background: transparent;
+    cursor: default;
+}
+
+.calendar_day.habit_exists {
+    background-color: #b85e5ea7;
+    color: #fff;
+}
+
+.calendar_day.habit_completed {
+    background-color: #b85e5e;
+    color: #fff;
+    font-weight: 600;
+}
+
+.calendar_day.today {
+    border: 2px solid #b85e5e;
+    font-weight: bold;
+}
+
+.calendar_day.clickable {
+    cursor: pointer;
+}
+
+.calendar_day:hover:not(.empty) {
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.habit_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #D5BDAF;
+    border-radius: 0.8rem;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex-wrap: nowrap;
+}
+
+.habit_left {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex: 1;
+    min-width: 0;
+}
+
+.habit_name {
+    font-size: 1.2rem;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex: 1;
+    transition: color 0.2s ease;
+}
+
+.habit_name:hover {
+    color: #b85e5e;
+}
+
+.habit_actions {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-shrink: 0;
+}
+
+.habit_item.pinned {
+    background-color: #d1a897;
+    border: 2px solid #b85e5e;
+    order: -1;
+}
+
+.pin_btn {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5EBE0;
+}
+
+.pin_btn svg {
+    width: 1.2rem;
+    height: auto;
+}
+
+.pin_btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Habit text popup */
+.habit_text_popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #EDEDE9;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    width: 50vw;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.habit_text_popup h3 {
+    margin-bottom: 1rem;
+    color: #3e3e3e;
+    font-size: 1.3rem;
+    border-bottom: 2px solid #b85e5e;
+    padding-bottom: 0.5rem;
+}
+
+.habit_text_content {
+    flex: 1;
+    overflow-y: auto;
+    padding-right: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.habit_text_content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.habit_text_content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.habit_text_content::-webkit-scrollbar-thumb {
+    background: #b85e5e;
+    border-radius: 10px;
+}
+
+.habit_text_content::-webkit-scrollbar-thumb:hover {
+    background: #a04e4e;
+}
+
+.close_habit_popup {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #b85e5e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    align-self: center;
+}
+
+.close_habit_popup:hover {
+    background-color: #a04e4e;
+    transform: scale(1.05);
+}
+
+.mobile_menu_sidebar {
+    position: fixed;
+    top: 0;
+    left: -30vw;
+    width: 30vw;
+    height: 100vh;
+    background-color: #EDEDE9;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 3000;
+    transition: left 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Bitcount', sans-serif;
+}
+
+.mobile_menu_sidebar.active {
+    left: 0;
+}
+
+.mobile_menu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 2px solid #D6CCC2;
+}
+
+.mobile_menu_title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #3e3e3e;
+}
+
+.mobile_menu_close {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.mobile_menu_close:hover {
+    background-color: rgba(184, 94, 94, 0.1);
+}
+
+.mobile_menu_close svg {
+    width: 24px;
+    height: 24px;
+    stroke: #b85e5e;
+}
+
+.mobile_menu_nav {
+    flex: 1;
+    padding: 1rem 0;
+}
+
+.mobile_menu_nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile_menu_nav li {
+    margin: 0;
+}
+
+.mobile_menu_nav a {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid #D6CCC2;
+}
+
+.mobile_menu_nav a:hover {
+    background-color: #D6CCC2;
+    color: #b85e5e;
+}
+
+.mobile_menu_nav .menu_icon {
+    margin-right: 1rem;
+    width: 20px;
+    height: 20px;
+}
+
+.mobile_menu_overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.mobile_menu_overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile_menu_settings {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 1.5rem;
+    text-decoration: none;
+    color: #3e3e3e;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    border-bottom: 1px solid #D6CCC2;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.mobile_menu_settings:hover {
+    background-color: #D6CCC2;
+    color: #b85e5e;
+}
+
+/* Media queries for habit tracker page. */
+
+
+@media screen and (min-width:320px) and (max-width:426px) {
+    .nav_links {
+        display: none;
+    }
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 1rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu_logo {
+        display: flex;
+        align-items: center;
+        padding-right: 2rem;
+        width: 1.4rem;
+        height: auto;
+    }
+
+    .settings {
+        width: 1.2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .streak_insight {
+        font-size: 0.6rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 1.6rem;
+        padding: 0.6rem 0.8rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 80vw;
+        height: 8rem;
+        font-size: 0.6rem;
+    }
+
+    .add_button {
+        width: 6rem;
+        height: 3rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1rem;
+        padding: 0.8rem 0.8rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 0.6rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background-color: #F5EBE0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn svg,
+    .delete_btn svg {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 0.6rem 1.4rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 0.6rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 90vw;
+        padding: 1rem;
+        margin: 2rem auto;
+    }
+
+    .calendar_header {
+        margin-bottom: 1rem;
+    }
+
+    .calendar_title {
+        font-size: 0.9rem;
+    }
+
+    .calendar_nav button svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .weekdays_row {
+        font-size: 0.6rem;
+        gap: 0.2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .calendar_grid {
+        gap: 0.2rem;
+        min-height: 250px;
+    }
+
+    .calendar_day {
+        min-height: 30px;
+        font-size: 0.7rem;
+        border-radius: 6px;
+        padding: 0.3rem;
+    }
+
+    .date_details_popup {
+        width: 85vw !important;
+        max-width: none !important;
+        font-size: 0.9rem;
+        padding: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .mobile_menu_sidebar {
+        width: 70vw;
+        left: -70vw;
+    }
+
+    .mobile_menu_nav a {
+        font-size: 0.9rem;
+        padding: 1rem 1.2rem;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:702px) {
+    .nav_links {
+        display: none;
+    }
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu_logo {
+        display: flex;
+        align-items: center;
+        padding-right: 4rem;
+        width: 1.4rem;
+        height: auto;
+    }
+
+    .settings {
+        width: 1.2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 1rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .streak_insight {
+        font-size: 0.6rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 1.6rem;
+        padding: 0.6rem 0.8rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 80vw;
+        height: 8rem;
+        font-size: 0.6rem;
+    }
+
+    .add_button {
+        width: 6rem;
+        height: 3rem;
+        font-size: 0.6rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1rem;
+        padding: 0.8rem 0.8rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 0.6rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 0.6rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+        background-color: #F5EBE0;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn svg,
+    .delete_btn svg {
+        width: 0.6rem;
+        height: 0.6rem;
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 0.8rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 0.6rem 1.4rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 0.6rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 85vw;
+        padding: 1.2rem;
+    }
+
+    .calendar_title {
+        font-size: 1rem;
+    }
+
+    .calendar_nav button svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .weekdays_row {
+        font-size: 0.7rem;
+        gap: 0.3rem;
+    }
+
+    .calendar_grid {
+        gap: 0.3rem;
+        min-height: 280px;
+    }
+
+    .calendar_day {
+        min-height: 35px;
+        font-size: 0.8rem;
+        border-radius: 7px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .mobile_menu_sidebar {
+        width: 50vw;
+        left: -50vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .habit_item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.8rem;
+    }
+
+    .habit_left {
+        width: 100%;
+        margin-bottom: 0.8rem;
+    }
+
+    .habit_name {
+        font-size: 1rem;
+    }
+
+    .habit_actions {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+    }
+
+    .habit_date {
+        font-size: 0.8rem;
+        flex: 1;
+    }
+
+    .edit_btn,
+    .delete_btn,
+    .pin_btn {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .edit_btn svg,
+    .delete_btn svg,
+    .pin_btn svg {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .streak_count {
+        font-size: 0.9rem;
+    }
+
+    .habit_text_popup {
+        width: 85vw;
+        padding: 1.5rem;
+    }
+
+    .habit_text_popup h3 {
+        font-size: 1.1rem;
+    }
+
+    .habit_text_content {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+    .habit_name {
+        font-size: 1rem;
+    }
+
+    .habit_text_popup {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calendar_container {
+        width: 90vw;
+        padding: 1rem;
+    }
+
+    .calendar_title {
+        font-size: 1.2rem;
+    }
+
+    .calendar_nav button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .weekdays_row {
+        font-size: 0.7rem;
+    }
+
+    .calendar_day {
+        min-height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .habit_text_popup {
+        width: 60vw;
+    }
+}
+
+@media screen and (min-width:702px) and (max-width:769px) {
+    .nav_links {
+        display: none;
+    }
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .menu_logo {
+        display: flex;
+        align-items: center;
+        padding-right: 4rem;
+        width: 1.4rem;
+        height: auto;
+    }
+
+    .settings {
+        width: 1.2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2.8rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .streak_insight {
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 1.6rem;
+        padding: 0.8rem 1rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 60vw;
+        height: 10rem;
+        font-size: 1rem;
+    }
+
+    .add_button {
+        width: 8rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1rem;
+        padding: 1rem 1.6rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 1rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        padding: 0.4rem 0.6rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 0.6rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn:hover,
+    .delete_btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 0.6rem 1.4rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 80vw;
+        padding: 1.5rem;
+    }
+
+    .calendar_title {
+        font-size: 1.2rem;
+    }
+
+    .weekdays_row {
+        font-size: 0.8rem;
+    }
+
+    .calendar_grid {
+        gap: 0.4rem;
+        min-height: 320px;
+    }
+
+    .calendar_day {
+        min-height: 40px;
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width: 769px) {
+
+    .mobile_menu_sidebar,
+    .mobile_menu_overlay {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1020px) {
+    .nav_links {
+        display: flex;
+        align-items: center;
+        padding-right: 4rem;
+        font-size: 0.8rem;
+    }
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+
+    .nav_logo img {
+        width: 3rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .settings {
+        width: 1.2rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2.8rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .streak_insight {
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 1.6rem;
+        padding: 0.8rem 1rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 60vw;
+        height: 10rem;
+        font-size: 1rem;
+    }
+
+    .add_button {
+        width: 8rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1rem;
+        padding: 1rem 1.6rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 1rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        padding: 0.4rem 0.6rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 0.6rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn:hover,
+    .delete_btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 0.6rem 1.4rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 75vw;
+        max-width: 700px;
+    }
+
+    .calendar_title {
+        font-size: 1.3rem;
+    }
+
+    .weekdays_row {
+        font-size: 0.85rem;
+    }
+
+    .calendar_day {
+        min-height: 42px;
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (min-width:1020px) and (max-width:1200px) {
+    .nav_links {
+        display: flex;
+        align-items: center;
+        padding-right: 3rem;
+        font-size: 1rem;
+    }
+
+    .settings {
+        width: 1.6rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2.8rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    .streak_insight {
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 1.6rem;
+        padding: 0.8rem 1rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 60vw;
+        height: 10rem;
+        font-size: 1rem;
+    }
+
+    .add_button {
+        width: 8rem;
+        height: 3rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1rem;
+        padding: 1rem 1.6rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 1rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        padding: 0.4rem 0.8rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 0.8rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn:hover,
+    .delete_btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 1rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 0.8rem 1.6rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 70vw;
+        max-width: 800px;
+    }
+
+    .calendar_title {
+        font-size: 1.4rem;
+    }
+
+    .calendar_day {
+        min-height: 45px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1470px) {
+    .nav_links {
+        display: flex;
+        align-items: center;
+        padding-right: 4rem;
+        font-size: 1rem;
+    }
+
+    .settings {
+        width: 1.8rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2.8rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .streak_insight {
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 1.6rem;
+        padding: 1rem 1.2rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 60vw;
+        height: 12rem;
+        font-size: 1.2rem;
+    }
+
+    .add_button {
+        width: 12rem;
+        height: 4rem;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1rem;
+        padding: 1.4rem 2rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        padding: 0.6rem 1rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn:hover,
+    .delete_btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 1rem 2rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        max-width: 850px;
+    }
+
+    .calendar_title {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:1800px) {
+
+    .nav_links {
+        display: flex;
+        align-items: center;
+        padding-right: 6rem;
+        font-size: 1.4rem;
+    }
+
+    .settings {
+        width: 2.4rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2.8rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .streak_insight {
+        font-size: 1.4rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 2rem;
+        padding: 1.2rem 1.8rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 60vw;
+        height: 16rem;
+        font-size: 1.4rem;
+    }
+
+    .add_button {
+        width: 15rem;
+        height: 6rem;
+        font-size: 1.6rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1.2rem;
+        padding: 1.8rem 3.2rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 1.6rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_name {
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1.4rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn:hover,
+    .delete_btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 2rem auto 0 auto;
+        padding: 1.2rem 2.4rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1.6rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 65vw;
+        max-width: 1000px;
+        padding: 2.5rem;
+    }
+
+    .calendar_title {
+        font-size: 1.8rem;
+    }
+
+    .calendar_nav button svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .weekdays_row {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .calendar_grid {
+        gap: 0.6rem;
+        min-height: 450px;
+    }
+
+    .calendar_day {
+        min-height: 55px;
+        font-size: 1.2rem;
+        border-radius: 12px;
+    }
+}
+
+@media screen and (min-width:3000px) {
+
+    .nav_item_list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav_logo {
+        margin-right: auto;
+        padding-left: 3rem;
+        display: flex;
+        align-items: center;
+        height: 20px;
+    }
+
+    .nav_logo img {
+        width: 3rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .nav_links {
+        display: flex;
+        align-items: center;
+        padding-right: 10rem;
+        font-size: 1.8rem;
+
+    }
+
+    .settings {
+        width: 2.8rem;
+        height: auto;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .s1_d1 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 2.8rem;
+        padding-top: 3rem;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+
+    .streak_insight {
+        font-size: 1.6rem;
+        font-weight: 600;
+        background-color: #b85e5e;
+        color: black;
+        border-radius: 2.5625rem;
+        padding: 1.75rem 2.25rem;
+        border: 0.125rem solid antiquewhite;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .input_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 4rem;
+    }
+
+    .input_box {
+        background-color: #E3D5CA;
+        width: 60vw;
+        height: 24rem;
+        font-size: 1.8rem;
+    }
+
+    .input_box:hover {
+        transform: scale(1.002);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .add_button {
+        width: 20rem;
+        height: 8rem;
+        font-size: 2rem;
+        font-weight: 600;
+        background-color: #b85e5ea7;
+        color: black;
+        border-radius: 1.2rem;
+        padding: 2rem 4rem;
+        border: none;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habits_container {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        background-color: #D6CCC2;
+        box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .no_habits {
+        font-size: 2rem;
+        text-align: center;
+        color: #545454;
+        font-style: italic;
+    }
+
+    .habit_item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        background-color: #D5BDAF;
+        border-radius: 0.8rem;
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.08);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .habit_item:hover {
+        box-shadow: inset 2px 4px 16px rgba(109, 95, 49, 0.241);
+    }
+
+    .habit_name {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+
+    .habit_actions {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .edit_btn,
+    .delete_btn {
+        padding: 0.8rem 1.6rem;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 1.8rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .edit_btn svg,
+    .delete_btn svg {
+        width: 2rem;
+        height: auto;
+    }
+
+    .edit_btn:hover,
+    .delete_btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .edit_btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #F5EBE0;
+        gap: 1rem;
+    }
+
+    .delete_btn {
+        background-color: #F5EBE0;
+    }
+
+    .streak_count {
+        font-weight: bold;
+        font-size: 2rem;
+        color: #232322;
+    }
+
+    .show_more_btn {
+        display: block;
+        margin: 1rem auto 0 auto;
+        padding: 1.2rem 2.4rem;
+        background-color: #aa8278ab;
+        color: white;
+        border: none;
+        border-radius: 1rem;
+        cursor: pointer;
+        font-size: 2rem;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .calendar_container {
+        width: 60vw;
+        max-width: 1400px;
+        padding: 3rem;
+    }
+
+    .calendar_title {
+        font-size: 2.2rem;
+    }
+
+    .calendar_nav button svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .weekdays_row {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+    .calendar_grid {
+        gap: 0.8rem;
+        min-height: 600px;
+    }
+
+    .calendar_day {
+        min-height: 70px;
+        font-size: 1.6rem;
+        border-radius: 15px;
+    }
+
+    .date_details_popup {
+        font-size: 1.4rem;
+        max-width: 600px !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 390px) {
+    .calendar_container {
+        width: 92vw;
+        padding: 0.8rem;
+        margin: 1.5rem auto;
+    }
+
+    .calendar_header {
+        margin-bottom: 0.8rem;
+    }
+
+    .calendar_title {
+        font-size: 0.85rem;
+    }
+
+    .calendar_nav button svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .weekdays_row {
+        font-size: 0.55rem;
+        gap: 0.15rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .calendar_grid {
+        gap: 0.15rem;
+        min-height: 240px;
+    }
+
+    .calendar_day {
+        min-height: 28px;
+        font-size: 0.65rem;
+        border-radius: 5px;
+        padding: 0.2rem;
+    }
+
+    .date_details_popup {
+        width: 88vw !important;
+        max-width: none !important;
+        font-size: 0.85rem;
+        padding: 1.2rem !important;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 450px) {
+    .calendar_container {
+        width: 88vw;
+        padding: 1.1rem;
+        margin: 2rem auto;
+    }
+
+    .calendar_header {
+        margin-bottom: 1.1rem;
+    }
+
+    .calendar_title {
+        font-size: 0.95rem;
+    }
+
+    .calendar_nav button svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .weekdays_row {
+        font-size: 0.65rem;
+        gap: 0.25rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .calendar_grid {
+        gap: 0.25rem;
+        min-height: 265px;
+    }
+
+    .calendar_day {
+        min-height: 32px;
+        font-size: 0.75rem;
+        border-radius: 6px;
+        padding: 0.35rem;
+    }
+
+    .date_details_popup {
+        width: 83vw !important;
+        max-width: none !important;
+        font-size: 0.95rem;
+        padding: 1.5rem !important;
+    }
+}

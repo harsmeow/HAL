@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAL-(हल) - Pomodoro Timer</title>
+    <link rel="stylesheet" href="timer.css">
+    <link rel="shortcut icon" href="assets/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="parent_header">
+        <div class="parent_navbar">
+            <nav>
+                <ul class="nav_item_list">
+                    <li class="nav_logo">
+                        <a class="logo" href="index.html">
+                            <img src="assets/logo.png" alt="logo">
+                        </a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="index.html">Home</a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="habit.html" target="_blank" rel="noopener noreferrer">Habit
+                            Tracker</a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="timer.html">Pomodoro Timer</a>
+                    </li>
+                    <li class="nav_links">
+                        <a class="nav_items" href="notes.html" target="_blank"
+                            rel="noopener noreferrer">Journal/Notes</a>
+                    </li>
+                    <li class="nav_links">
+                        <a href="#">
+                            <svg class="settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" color="#696D6E">
+                                <path d="M15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 
+                       10.3431 12 12 12C13.6569 12 15 10.6569 15 9Z" stroke="currentColor" stroke-width="1.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 
+                       2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 
+                       22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 
+                       7 14.2386 7 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="#"><img class="menu_logo" src="assets/menu_icon.png" alt="menu_logo"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile_menu">
+        <button class="close_menu">✕</button>
+        <a href="home.html">Home</a>
+        <a href="habit.html" target="_blank">Habit Tracker</a>
+        <a href="timer.html">Pomodoro Timer</a>
+        <a href="notes.html" target="_blank">Journal/Notes</a>
+        <svg class="settings" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            color="#696D6E">
+            <path d="M15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 
+    10.3431 12 12 12C13.6569 12 15 10.6569 15 9Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 
+    2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 
+    22 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M17 17C17 14.2386 14.7614 12 12 12C9.23858 12 
+    7 14.2386 7 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+
+    <section class="section1">
+        <div class="option_container">
+            <button class="pomodoro">Pomodoro</button>
+            <button class="short_break">Short Break</button>
+            <button class="long_break">Long Break</button>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="timer">
+            <span class="hour">25</span>
+            <span clas=":">:</span>
+            <span class="minutes">00</span>
+        </div>
+    </section>
+    <section class="section3">
+        <div class="section3_container">
+            <button class="start">Start</button>
+            <span><svg class="reset" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-refresh">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M20 11a8.1 8.1 0 0 0 -15.5 -2m-.5 -4v4h4" />
+                    <path d="M4 13a8.1 8.1 0 0 0 15.5 2m.5 4v-4h-4" />
+                </svg></span>
+        </div>
+    </section>
+    <div class="settings_popup hidden">
+        <div class="settings_box">
+            <h2>Settings</h2>
+
+            <div class="settings_tabs">
+                <button class="tab_btn active" data-tab="timer">Timer</button>
+                <button class="tab_btn" data-tab="sound">Sound</button>
+            </div>
+
+            <div class="tab_content" id="timer_tab">
+                <label>
+                    Pomodoro (minutes):
+                    <input type="number" id="pomodoro_input" min="1" max="180" value="25">
+                </label>
+                <label>
+                    Short Break (minutes):
+                    <input type="number" id="short_input" min="1" max="60" value="5">
+                </label>
+                <label>
+                    Long Break (minutes):
+                    <input type="number" id="long_input" min="1" max="60" value="15">
+                </label>
+            </div>
+
+            <div class="tab_content hidden" id="sound_tab">
+                <label>
+                    Sound Duration (seconds):
+                    <input type="number" id="sound_duration" min="1" max="30" value="5">
+                </label>
+
+                <div class="sound_file_section">
+                    <span>Choose Custom Sound:</span>
+                    <input type="file" id="custom_sound" accept="audio/*">
+                </div>
+            </div>
+            <div class="settings_buttons">
+                <button id="save_settings">Save</button>
+                <button id="close_settings">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="click_me">Click Me.</div>
+    <input type="file" id="bgInput" accept="image/*" style="display: none;">
+
+
+
+    <script src="timer.js"></script>
+
+</body>
+
+</html>

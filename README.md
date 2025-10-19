@@ -1,0 +1,2 @@
+# Hello user, firstly thankyou for being here and having a look at my project. This is a small project build by me to practice my JavaScript logic and it's syntax. And hence, it might not be as good as a full-fledged developed product and may have some issue in it. Please feel free to point out any bug or issue and I will make sure to fix it as soon as my level of expertise. In the future I will make the code much more cleaner and better for sure and will add more features in this project as my knowledge and skills improves.
+[Live Demo](https://harsmeow.github.io/HAL/)
